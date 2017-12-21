@@ -37,14 +37,15 @@ public class DocumentController {
 			@RequestParam("fileId")int file,
 			@RequestParam("fileOb")CommonsMultipartFile cmf
 			){
-		if (cmf!=null) {
+		/*if (cmf!=null) {
 			Document doc=new Document();
 			doc.setFileId(file);
 			doc.setFileName(cmf.getOriginalFilename());
 			doc.setFileData(cmf.getBytes());
 
 			service.saveDocument(doc);
-		}
+		}*/
+		System.out.println("This line is added to check use of GIT reposutory");
 
 		return "Document";
 
